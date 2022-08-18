@@ -29,7 +29,7 @@
     text-transform: capitalize;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 720px) {
     .section_description {
 
         grid-template-columns: 1fr 1fr;
