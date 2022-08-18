@@ -102,3 +102,13 @@
 .temperature>h1 {
     font-size: 60px;
 }
+
+@media screen and (max-width: 768px) {
+    .section__input>button {
+        padding:2px 5px;
+    }
+
+    .section__temperature {
+        margin-top: 1rem;
+    }
+}
