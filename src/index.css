@@ -3,6 +3,7 @@
     --background-overlay: rgba(0, 0, 0, 0.4);
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -40,7 +41,7 @@
 .section {
     width: 100%;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 1.8rem;
     color: white;
 }
 
@@ -53,7 +54,7 @@
 
 .section__input>input {
     border: 0.8px solid white;
-    border-radius: 0.5rem;   
+    border-radius: 1.8rem;   
     background-color: transparent;
     color: white;
     padding: 0.5rem;
@@ -69,7 +70,7 @@
 .section__input>button {
     padding: 10px 50px;
     border: none;
-    border-radius: 0.4rem;
+    border-radius: 1.8rem;
     font-size: 20px;
     font-weight: 500;
     background-color: white;
@@ -79,6 +80,10 @@
     cursor: pointer;  
     background-color: lightskyblue; 
     transition: ease-in-out 0.2s; 
+}
+
+.section__input>button:hover:scaled {
+    transform: scale(5px);
 }
 
 .icon {

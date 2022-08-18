@@ -1,11 +1,13 @@
 import lake_bg from './assets/lake_bg.jpg';
 import hot2 from './assets/hot2.jpg';
 import Description from './components/Description';
+import Judul from './components/judul';
 import { useEffect, useState } from 'react';
 import { getFormattedWeatherData } from './weatherServics';
 
 
 function App() {
+  
 
   const [city, setCity] = useState("Surabaya");
   const [weather, setWeatherData] = useState(null);
@@ -32,7 +34,7 @@ function App() {
     const currentUnit = button.innerText.slice(1);
 
     const isCelcius = currentUnit === "C";
-    button.innerText = isCelcius ? "°C" : "°F";
+    button.innerText = isCelcius ? "°F" : "°C";
     setUnits(isCelcius ? "metric" : "imperial")
   };
 
@@ -45,6 +47,7 @@ function App() {
   }
 
   return (
+    
     <div className="App" style={{backgroundImage: `url(${bg})`}}>
       <div className="overlay">
         {
@@ -74,6 +77,7 @@ function App() {
 
           {/* bottom description */}
           <Description weather={weather} units={units} />
+          <Judul />
         </div>
           )
         }
